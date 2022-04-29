@@ -6,11 +6,9 @@ import QueryWrapper from '@src/ReactQuery/QueryWrapper'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <html data-theme="light">
-      <QueryWrapper>
-        <Component {...pageProps} />
-      </QueryWrapper>
-    </html>
+    <QueryWrapper>
+      <Component {...pageProps} />
+    </QueryWrapper>
   )
 }
 

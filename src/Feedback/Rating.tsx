@@ -10,12 +10,12 @@ export default function Rating(props: RatingProps) {
     return (
         <div className="flex flex-col items-center gap-4 my-2">
             <div className="rating rating-lg gap-4">
-                <input type="radio" name="rating" className="mask mask-star-2 bg-[#000] rating-hidden" checked />
+                <input onChange={()=>{}} type="radio" name="rating" className="mask mask-star-2 bg-[#000] rating-hidden" checked />
                 {[...Array(maxRating)].map((r, idx) => (
                     <input onChange={(e) => {
                         const checked = e.target.checked;
                         if (checked) setCurrentRating(idx + 1)
-                    }} key={Math.random()} type="radio" name="rating" className="mask mask-star-2 bg-orange-400 " checked={idx < currentRating} />
+                    }} key={Math.random()} type="radio" name="rating" className="mask mask-star-2 bg-orange-400 " checked={idx+1 === currentRating} />
                 ))}
             </div>
 

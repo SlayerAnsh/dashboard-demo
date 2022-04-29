@@ -1,10 +1,13 @@
+import Home from '@src/Home'
+import Layout from '@src/Layout/Layout'
 import type { NextPage } from 'next'
 
-const Home: NextPage = () => {
+const HomePage: NextPage = () => {
   return (
-    <div className="">
-    </div>
+    <Layout active="home">
+      <Home />
+    </Layout>
   )
 }
 
-export default Home
+export default HomePage

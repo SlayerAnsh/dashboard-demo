@@ -10,12 +10,14 @@
     "cypress": "cypress open",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "ci:check":"tsc && next lint --quiet"
+    "ci:check": "tsc && next lint --quiet"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-query": "^3.38.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.7",
@@ -30,6 +32,7 @@
     "autoprefixer": "^10.4.4",
     "babel-loader": "^8.2.3",
     "cypress": "^9.5.2",
+    "daisyui": "^2.14.2",
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "eslint-plugin-storybook": "^0.5.7",

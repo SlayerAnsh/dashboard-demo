@@ -33,7 +33,7 @@ export default function Layout(props: LayoutProps) {
                 {/* SIDEBAR */}
                 <div className="drawer-side">
                     <label htmlFor="layout-drawer" className="drawer-overlay"></label>
-                    <ul className="menu p-4 overflow-y-auto w-80 bg-[#0000f5] text-white">
+                    <ul className="menu p-4 overflow-y-auto w-80 bg-[#0000f5] text-white font-medium">
                         <li className={`border-white ${active === 'home' ? 'border-l-2' : 'border-l-0'}`}>
                             <Link href={SITE_PAGES.home()} passHref>
                                 <a>Home</a>

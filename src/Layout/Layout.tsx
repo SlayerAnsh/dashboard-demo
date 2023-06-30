@@ -54,7 +54,7 @@ export default function Layout(props: LayoutProps) {
                                 <a>Feedback</a>
                             </Link>
                         </li>
-                        <li className='mt-auto font-extralight text-xs' >ENV: {process.env.NEXT_PUBLIC_TEST_NAME}</li>
+                        <li className='mt-auto font-extralight text-xs' >ENV: {process.env.NEXT_PUBLIC_TEST_NAME} 0.1</li>
                     </ul>
                 </div>
             </div>
